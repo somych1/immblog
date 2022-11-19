@@ -1,6 +1,46 @@
-<ul>
+<!-- <ul class="topnav" id="myTopnav">
     <li><a class="" href="">Home</a></li>
     <li><a href="#">Форум</a></li>
     <li><a class="" href="/immblog/citizenship">Гражданство США</a></li>
     <li style="float:right"><a class="" href="#">О нас</a></li>
-</ul>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+</ul> -->
+
+<nav class="navbar">
+  <!-- LOGO -->
+  <div class="logo">IMMBLOG</div>
+  <!-- NAVIGATION MENU -->
+  <ul class="nav-links">
+    <!-- USING CHECKBOX HACK -->
+    <input type="checkbox" id="checkbox_toggle" />
+    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+    <!-- NAVIGATION MENUS -->
+    <div class="menu">
+      <li><a href="/">Home</a></li>
+      <li class="services">
+        <p>Полезная информация&#8964;</p>
+        <!-- DROPDOWN MENU -->
+        <ul class="dropdown">
+          <li><a href="#">Номер социального<br>страхования (SSN)</a></li>
+          <li><a href="#">Водительские права</a></li>
+          <li><a href="/immblog/citizenship">Гражданство США</a></li>
+        </ul>
+      </li>
+      <li class="services">
+        <p>Формы&#8964;</p>
+        <!-- DROPDOWN MENU -->
+        <ul class="dropdown">
+          <li><a href="/">Форма I-130</a></li>
+          <li><a href="/">Форма I-131</a></li>
+          <li><a href="/">Форма I-485</a></li>
+          <li><a href="/">Форма I-765</a></li>
+          <li><a href="/">Форма N-400</a></li>
+        </ul>
+      </li>
+      <li><a href="/">About</a></li>
+
+    </div>
+  </ul>
+</nav>
