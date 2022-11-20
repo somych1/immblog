@@ -8,6 +8,7 @@ import { VerticalNavbarComponent } from './components/vertical-navbar/vertical-n
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { CitizenshipComponent } from './components/citizenship/citizenship.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CitizenshipComponent } from './components/citizenship/citizenship.compo
     VerticalNavbarComponent,
     FooterComponent,
     HomeComponent,
-    CitizenshipComponent
+    CitizenshipComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

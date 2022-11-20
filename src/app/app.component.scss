@@ -15,3 +15,16 @@
     margin: 100px auto 40px auto;
     // background-color:#2b2b2b;
 }
+
+.container {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+    .container {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
