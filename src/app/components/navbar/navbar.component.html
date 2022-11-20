@@ -1,48 +1,29 @@
-<!-- <ul class="topnav" id="myTopnav">
-    <li><a class="" href="">Home</a></li>
-    <li><a href="#">Форум</a></li>
-    <li><a class="" href="/immblog/citizenship">Гражданство США</a></li>
-    <li style="float:right"><a class="" href="#">О нас</a></li>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-</ul> -->
-
-<nav class="navbar">
-  <!-- LOGO -->
-  <div class="logo">IMMBLOG</div>
-  <!-- NAVIGATION MENU -->
-  <ul class="nav-links">
-    <!-- USING CHECKBOX HACK -->
-    <input type="checkbox" id="checkbox_toggle" />
-    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-    <!-- NAVIGATION MENUS -->
-    <div class="menu">
-      <li><a href="./">Home</a></li>
-      <li class="services">
-        <!-- <p>Полезная информация<span>&#8964;</span></p> -->
-        <a href="#">Полезная информация</a>
-        <!-- DROPDOWN MENU -->
-        <ul class="dropdown">
-          <li><a href="#">Номер социального<br>страхования (SSN)</a></li>
-          <li><a href="#">Водительские права</a></li>
-          <li><a routerLink="./citizenship">Гражданство США</a></li>
-        </ul>
-      </li>
-      <li class="services">
-        <!-- <p>Формы<span>&#8964;</span></p> -->
-        <!-- <p>Формы</p> -->
-        <a href="#">Формы</a>
-        <!-- DROPDOWN MENU -->
-        <ul class="dropdown">
-          <li><a href="/">Форма I-130</a></li>
-          <li><a href="/">Форма I-131</a></li>
-          <li><a href="/">Форма I-485</a></li>
-          <li><a href="/">Форма I-765</a></li>
-          <li><a href="/">Форма N-400</a></li>
-        </ul>
-      </li>
-      <li><a href="./about">About</a></li>
+<div class="topnav" id="myTopnav" [ngClass]="status ? 'responsive' : ''">
+    <a href="./">IMMIBLOG</a>
+    <a href="#posts">Статьи</a>
+    <div class="dropdown">
+        <button class="dropbtn">Полезная информация
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="#">Номер социального<br>страхования (SSN)</a>
+            <a href="#">Водительские права</a>
+            <a href="./citizenship">Гражданство США</a>
+        </div>
     </div>
-  </ul>
-</nav>
+    <div class="dropdown">
+        <button class="dropbtn">Иммиграционные формы
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="#">Форма I-130</a>
+            <a href="#">Форма I-131</a>
+            <a href="#">Форма I-485</a>
+            <a href="#">Форма I-765</a>
+            <a href="#">Форма I-400</a>
+        </div>
+    </div>
+    <a href="#about">About</a>
+    <!-- <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a> -->
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" (click)="myFunction()">&#9776;</a>
+</div>

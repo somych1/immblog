@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, ViewChildren } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -9,7 +9,14 @@ export class NavbarComponent implements OnInit {
 
   constructor() { }
 
+  // If { static: true }
   ngOnInit(): void {
   }
+  
+  status: boolean = false;
+  myFunction() {
+    this.status = !this.status;
+  }
+
 
 }
