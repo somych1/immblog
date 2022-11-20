@@ -4,8 +4,8 @@ import { HomeComponent } from './components/home/home.component';
 import { CitizenshipComponent } from './components/citizenship/citizenship.component';
 
 const routes: Routes = [
-  {path: 'immblog', component: HomeComponent},
-  {path: 'immblog/citizenship', component: CitizenshipComponent}
+  {path: '', component: HomeComponent},
+  {path: 'citizenship', component: CitizenshipComponent}
 ];
 
 @NgModule({
