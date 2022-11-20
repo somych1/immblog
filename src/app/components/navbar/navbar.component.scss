@@ -1,30 +1,126 @@
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    /* border: 1px solid #e7e7e7;
-    background-color: #f3f3f3; */
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+/* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
     font-family: DM Sans, Roboto, sans-serif;
-    /* font-size: 16px; */
-    letter-spacing: 0.2px;
+    background-color: white;
+    box-shadow: 0 2px 2px 0.5px rgba(0, 0, 0, .2);
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: whitesmoke;
+.nav-links a {
     color: black;
-    border-radius: 1em;
+}
+
+/* LOGO */
+.logo {
+    font-size: 32px;
+}
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li:hover {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+/* DROPDOWN MENU */
+.services {
+    position: relative;
+}
+
+.dropdown {
+    background-color: white;
+    padding: 1em 0;
+    position: absolute;
+    /*WITH RESPECT TO PARENT*/
+    display: none;
+    top: 100%;
+    left: 0px;
+    width: auto;
+    box-shadow: 0 2px 2px 0.5px rgba(0, 0, 0, .2);
+}
+
+.dropdown li+li {
+    margin-top: 10px;
+}
+
+.dropdown li {
+    padding: 0.5em 1em;
+    white-space: nowrap;
+    text-align: left;
+
+}
+
+.services:hover .dropdown {
+    display: block;
+}
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox] {
+    display: none;
+}
+
+/*HAMBURGER MENU*/
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: white;
+        right: 0;
+        left: 0;
+        text-align: left;
+        padding: 16px 0;
+        box-shadow: 0 2px 2px 0.5px rgba(0, 0, 0, .2);
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color: whitesmoke;
+        transition: 0.3s ease;
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .dropdown {
+        left: 0;
+        top: 0;
+        transform: translateX(35%);
+    }
+
+    .dropdown li:hover {
+        background-color: whitesmoke;
+    }
 }

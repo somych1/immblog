@@ -6,7 +6,25 @@
     margin-top: 5%;
 } */
 
-.content{
-    width: 1200px;
+// .content{
+//     // min-width: 1200px;
+//     margin: auto;
+// }
+
+/* UTILITIES */
+* {
     margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//    body {
+//     font-family: cursive;
+//    }
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
 }
