@@ -7,7 +7,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { VerticalNavbarComponent } from './components/vertical-navbar/vertical-navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
-import { CitizenshipComponent } from './components/citizenship/citizenship.component';
+import { CitizenshipComponent } from './components/helpfull-info/citizenship/citizenship.component';
 import { AboutComponent } from './components/about/about.component';
 import { I130Component } from './components/forms/i130/i130.component';
 import { I131Component } from './components/forms/i131/i131.component';

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
-import { CitizenshipComponent } from './components/citizenship/citizenship.component';
+import { CitizenshipComponent } from './components/helpfull-info/citizenship/citizenship.component';
 import { AboutComponent } from './components/about/about.component';
 import { I130Component } from './components/forms/i130/i130.component';
 import { I131Component } from './components/forms/i131/i131.component';
