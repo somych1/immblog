@@ -17,16 +17,14 @@
 // }
 
 .container {
-    margin:1% 20% auto 20%;
-    // margin-left: 20%;
-    // margin-right: 20%;
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 /* APPLYING MEDIA QUERIES */
 @media (max-width: 768px) {
     .container {
-        margin:1% 2% auto 2%;
-        margin-left: 2%;
-        margin-right: 2%;
+        margin: 2% 2% 2% 2%;
     }
 }
