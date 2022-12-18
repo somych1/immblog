@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +17,7 @@ import { I765Component } from './components/forms/i765/i765.component';
 import { N400Component } from './components/forms/n400/n400.component';
 import { SsnComponent } from './components/helpfull-info/ssn/ssn.component';
 import { DriversLicenceComponent } from './components/helpfull-info/drivers-licence/drivers-licence.component';
+import { CaseStatusComponent } from './components/case-status/case-status.component';
 
 @NgModule({
   declarations: [
@@ -32,11 +34,13 @@ import { DriversLicenceComponent } from './components/helpfull-info/drivers-lice
     I765Component,
     N400Component,
     SsnComponent,
-    DriversLicenceComponent
+    DriversLicenceComponent,
+    CaseStatusComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

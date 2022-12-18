@@ -10,6 +10,7 @@ import { I765Component } from './components/forms/i765/i765.component';
 import { N400Component } from './components/forms/n400/n400.component';
 import { SsnComponent } from './components/helpfull-info/ssn/ssn.component';
 import { DriversLicenceComponent } from './components/helpfull-info/drivers-licence/drivers-licence.component';
+import { CaseStatusComponent } from './components/case-status/case-status.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -21,7 +22,8 @@ const routes: Routes = [
   {path: 'n400', component: N400Component},
   {path: 'ssn', component: SsnComponent},
   {path: 'drivers-licence', component: DriversLicenceComponent},
-  {path: 'citizenship', component: CitizenshipComponent}
+  {path: 'citizenship', component: CitizenshipComponent},
+  {path: 'case-status', component: CaseStatusComponent}
 ];
 
 @NgModule({

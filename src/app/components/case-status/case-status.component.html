@@ -1,0 +1,22 @@
+<div>
+    <div class="case-status-info">
+        <fieldset class="case-status-form">
+            <div class="field-block">
+                <h1 style="text-align: center;">Проверка статуса кейса</h1>
+            </div>
+            <div class="field-box">
+                <input id="receipt_number" name="appReceiptNum" type="text" class="form-control textbox" maxlength="13">
+            </div>
+            
+        </fieldset>
+    
+    </div>
+    <div *ngIf='caseStatus'>
+      <p>
+        {{caseStatus.status}}
+      </p>
+      <p>
+        {{caseStatus.description}}
+      </p>
+    </div>
+</div>

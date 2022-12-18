@@ -1,0 +1,48 @@
+h1, h2, p {
+    font-family: DM Sans, Roboto, sans-serif;
+    margin-top: 2%;
+}
+.textbox {
+    margin: auto;
+    justify-self: center;
+}
+a {
+    color: blue;
+}
+.case-status-info{
+    width: 375px;
+    margin: 20px auto 40px auto;
+}
+fieldset{
+    padding: 0.35em 0.75em 0.625em;
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+}
+
+.case-status-form{
+    margin: auto;
+    width: 100%;
+    
+}
+
+.fieldbox{
+    width: 100%;
+    padding: 0px;
+    float: left;
+    text-align: center;
+}
+
+.textbox {
+    width: 100%;
+    height: 40px;
+    padding: 6px 15px;
+    font-size: 15px;
+    text-align: center;
+    border: 1px solid #727272;
+}
