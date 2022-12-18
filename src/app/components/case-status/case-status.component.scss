@@ -1,40 +1,24 @@
 h1, h2, p {
     font-family: DM Sans, Roboto, sans-serif;
-    margin-top: 2%;
-}
-.textbox {
-    margin: auto;
-    justify-self: center;
 }
 a {
     color: blue;
 }
 .case-status-info{
-    width: 375px;
+    width: 400px;
     margin: 20px auto 40px auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 fieldset{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     padding: 0.35em 0.75em 0.625em;
-    display: block;
-    margin-inline-start: 2px;
-    margin-inline-end: 2px;
-    padding-block-start: 0.35em;
-    padding-inline-start: 0.75em;
-    padding-inline-end: 0.75em;
-    padding-block-end: 0.625em;
-    min-inline-size: min-content;
 }
 
-.case-status-form{
-    margin: auto;
+.field-block{
     width: 100%;
-    
-}
-
-.fieldbox{
-    width: 100%;
-    padding: 0px;
-    float: left;
+    margin-top: 5px;
     text-align: center;
 }
 
@@ -45,4 +29,32 @@ fieldset{
     font-size: 15px;
     text-align: center;
     border: 1px solid #727272;
+    border-radius: 5px;
+}
+
+.btn{
+    width: 153px;
+    height: 37px;
+    line-height: 37px;
+    padding: 0px;
+    border: 1px solid #666666;
+    border-radius: 5px;
+    background-color: #f3f3f3;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: #1288c3;
+}
+
+.results-field{
+    // width: 400px;
+    margin: 20px auto 40px auto;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.case-status{
+    padding: 5px;;
 }

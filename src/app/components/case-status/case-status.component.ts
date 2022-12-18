@@ -11,17 +11,16 @@ export class CaseStatusComponent implements OnInit {
   caseStatus: any;
   caseId: string;
 
-  constructor(private caseStatusApi: CaseStatusApiService) { }
+  constructor(
+    private caseStatusApi: CaseStatusApiService
+    ) { }
 
   ngOnInit(): void {
-    // this.getCaseStatus(this.caseId);
   }
 
   getCaseStatus(caseNumber: string){
     this.caseStatusApi.getStatus(caseNumber).subscribe((data)=>{
       this.caseStatus = data;
-      console.log("retrieving data")
-      console.log(data)
     })
   }
 }
